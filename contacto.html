@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-store-3-fill nav__icon"></i>
+                Tienda <span> Muebles</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#producto" class="nav__link">Modelos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#tienda" class="nav__link">Tienda</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacto</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__button"><i class="ri-user-line"></i>Login</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-5-line"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main container">
+        <section class="form__container section">
+            <h2 class="section__title">Contactanos</h2>
+            <form class="form" id="formulario" action="#">
+                <div class="form__content">
+                    <fieldset class="form__box">
+                        <legend class="form__title">Tus Datos</legend>
+                        <div class="form__data">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="input" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form__data">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" class="input" id="apellidos" name="apellidos"
+                                placeholder="Ingresa tus apellidos">
+                        </div>
+                        <div class="form__data">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" class="input" id="asunto" name="asunto" placeholder="Asunto">
+                        </div>
+                        <div class="form__data">
+                            <label for="correo">Email:</label>
+                            <input type="email" class="input" id="correo" name="correo" placeholder="Tú Email">
+                        </div>
+                        <div class="form__data">
+                            <label for="telefono">Telefono:</label>
+                            <input type="tel" class="input" id="telefono" name="telefono" placeholder="Tú Telefono">
+                        </div>
+                        <div class="form__data">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea rows="10" cols="20" id="mensaje" name="mensaje" class="input textarea"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__box">
+                        <legend class="form__title">País</legend>
+                        <div class="form__data">
+                            <label for="pais">País: </label>
+                            <select id="pais" class="input">
+                                <option value="0">Selecionar País</option>
+                                <option value="1">Perú</option>
+                                <option value="2">Mexico</option>
+                                <option value="3">Colombia</option>
+                                <option value="4">Argentina</option>
+                                <option value="5">Brasil</option>
+                                <option value="6">Bolivia</option>
+                                <option value="7">Chile</option>
+                            </select>
+                        </div>
+                        <div class="form__data">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" class="input" id="ciudad" name="ciudad" placeholder="Ciudad">
+                        </div>
+                        <div class="form__data">
+                            <label for="provincia">Provincia: </label>
+                            <input type="text" class="input" id="provincia" name="provincia" placeholder="Provincia">
+                        </div>
+                        <div class="form__data">
+                            <label for="distrito">Distrito: </label>
+                            <input type="text" class="input" id="distrito" name="distrito" placeholder="Distrito">
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="spinner" class="spinner">
+                    <div class="sk-chase">
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                    </div>
+                </div>
+                <div class="form__buton">
+                    <button type="submit" class="btn" id="button">Enviar formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-line"></div>
+        <div class="footer__container container grid">
+            <a href="#" class="footer__logo">
+                <i class="ri-store-3-fill nav__icon"></i>
+                T<span>M</span>
+            </a>
+            <div class="footer__nav">
+                <h3 class="footer__title">Categoria</h3>
+                <ul>
+                    <li class="footer__items">Cocina</li>
+                    <li class="footer__items">Oficina</li>
+                    <li class="footer__items">Jardin</li>
+                    <li class="footer__items">Cochera</li>
+                    <li class="footer__items">Dormitorios</li>
+                </ul>
+            </div>
+            <div class="footer__nav">
+                <h3 class="footer__title">Sobre Nosotros</h3>
+                <ul>
+                    <li class="footer__items">
+                        <a href="" class="footer__link">Nuestra Historia</a>
+                    </li>
+                    <li class="footer__items">
+                        <a href="" class="footer__link">Misión, Visión y Valores</a>
+                    </li>
+                    <li class="footer__items">
+                        <a href="" class="footer__link">Politica de Privacidad</a>
+                    </li>
+                    <li class="footer__items">
+                        <a href="" class="footer__link">Terminos del Servicio</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__nav">
+                <h3 class="footer__title">Soporte</h3>
+                <ul>
+                    <li class="footer__items">
+                        <a href="#" class="footer__link">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="footer__items">
+                        <a href="#" class="footer__link">Ayuda en Linea</a>
+                    </li>
+                    <li class="footer__items">
+                        <a href="#" class="footer__link">Confianza y Seguridad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright"> &#169;Todos los derechos reservados</p>
+    </footer>
+    <script src="assets/js/contacto.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
